@@ -1,0 +1,101 @@
+An ordered dict is a dictionary subclass that remembers the order that keys were
+first inserted. 
+
+Difference between dict() and OrderedDict()
+OrderedDict preserves the order in which the keys are inserted. A regular dict
+doesn't track the insertion order and iterating it gives the value in an
+arbitrary order.
+
+Important points:
+1.Key value change:
+If the value of a certain key is changed, the position of the key remains 
+unchanged in OrderedDict.
+
+from collections import OrderedDict
+ 
+print("Before:\n")
+od = OrderedDict()
+od['a'] = 1
+od['b'] = 2
+od['c'] = 3
+od['d'] = 4
+for key, value in od.items():
+    print(key, value)
+ 
+print("\nAfter:\n")
+od['c'] = 5
+for key, value in od.items():
+    print(key, value)
+Output: 
+
+Before:
+
+a 1
+b 2
+c 3
+d 4
+
+After:
+
+a 1
+b 2
+c 5
+d 4
+
+2. Deletion and Re-Inserting: 
+Deleting and re-inserting the same key will push it to the back as OrderedDict, 
+however, maintains the order of insertion.
+
+# A Python program to demonstrate working of deletion
+# re-insertion in OrderedDict
+from collections import OrderedDict
+ 
+print("Before deleting:\n")
+od = OrderedDict()
+od['a'] = 1
+od['b'] = 2
+od['c'] = 3
+od['d'] = 4
+ 
+for key, value in od.items():
+    print(key, value)
+ 
+print("\nAfter deleting:\n")
+od.pop('c')
+for key, value in od.items():
+    print(key, value)
+ 
+print("\nAfter re-inserting:\n")
+od['c'] = 3
+for key, value in od.items():
+    print(key, value)
+Output: 
+
+Before deleting:
+
+a 1
+b 2
+c 3
+d 4
+
+After deleting:
+
+a 1
+b 2
+d 4
+
+After re-inserting:
+
+a 1
+b 2
+d 4
+c 3
+
+Other Considerations:  
+* Ordered dict in Python version 2.7 consumes more memory than normal dict. This 
+is due to the underlying Doubly Linked List implementation for keeping the order. In Python 2.7 Ordered Dict is not dict subclass, it’s a specialized container from collections module.
+* Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
+* Ordered Dict can be used as a stack with the help of popitem function. Try 
+implementing LRU cache with Ordered Dict.
+
+ 

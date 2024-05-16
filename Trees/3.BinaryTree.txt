@@ -1,0 +1,35 @@
+Binary Tree:
+	A tree whose node can have maximum two children is called binary tree.
+
+	Each node can have either 0,1 or 2 children.
+
+Properties of Binary Tree:
+* At each level of i, the maximum number of nodes is 2pow(i).
+Example: In level 0 we can have only root node which is 2pow(0) nothing but 1
+element.
+	In level 1 root can have left node and right node which is 2pow(1) 
+nothing but 2 element.
+* The order of binary tree is 2.
+* Bianry tree does not allow duplicate values
+* While constructing a binary, if an element is less than the value of its 
+parent node, it is placed on the left side of it otherwise right side.
+* The minimum number of node is equal to h+1.
+* The maximum number of node is equal to 2pow(h+1)-1. 
+
+Advantages of Binary Tree:
+1. Searching in binary tree becomes faster.
+2. Binary tree provides six traversals.
+3. Two of six traversals give sorted order of elements.
+4. Maximum and minimum elements can be directly picked.
+5. It is used for graph traversal and to convert an expression to postfix and
+prefix forms.
+
+
+
+
+
+
+
+
+
+	

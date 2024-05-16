@@ -1,0 +1,17 @@
+Level Order Traversal:
+	Level order traversal of a tree is breadth first traversal for the tree. 
+
+Code:
+def levelOrder(root):
+    q=[]
+    q.append(root)
+    while len(q):
+        temp = q.pop(0)
+        print(temp.key, end = " ")
+        if temp.left:
+            q.append(temp.left)
+        if temp.right:
+            q.append(temp.right)
+
+Time Complexity: O(n) where n is the number of nodes in the binary tree 
+Space Complexity: O(n) where n is the number of nodes in the binary tree 

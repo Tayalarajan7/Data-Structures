@@ -1,0 +1,93 @@
+Deletion In Binary Tree:
+Delete a node from it by making sure that tree shrinks from the bottom (i.e. the 
+deleted node is replaced by the bottom-most and rightmost node).
+
+Algorithm
+Step 1 - Starting at root, find the deepest and right most node in binary tree
+and node which we want to delete.
+
+Step 2 - Replace the deepest rightmost node's data with the node to be deleted.
+
+Step 3 - Then delete the deepest rightmost node.
+
+Code:
+class Node:
+    def __init__(self,key):
+        self.key=key
+        self.left=None
+        self.right=None
+        
+def insertElementInBinaryTree(root,key):
+    if root:
+        q=[]
+        q.append(root)
+        while(len(q)):
+            tempRoot=q.pop(0)
+            if tempRoot.left:
+                q.append(tempRoot.left)
+            else:
+                tempRoot.left=Node(key)
+                break
+            if tempRoot.right:
+                q.append(tempRoot.right)
+            else:
+                tempRoot.right=Node(key)
+                break
+            
+def inOrder(root):
+    if root:
+        inOrder(root.left)
+        print(root.key,end = " ")
+        inOrder(root.right)
+
+def deleteDeepest(root,rootToDelete):
+    if root:
+        if root==rootToDelete:
+            rootToDelete=None
+        if root.left:
+            if root.left==rootToDelete:
+                root.left=None
+            else:
+                deleteDeepest(root.left,rootToDelete)
+        if root.right:
+            if root.right==rootToDelete:
+                root.right=None
+            else:
+                deleteDeepest(root.right,rootToDelete)
+            
+def deleteANodeInBinaryTree(root,element):
+    if root==None:
+        return None
+    if root.left==None and root.right==None:
+        if root.key==element:
+            return None
+        else:
+            return root
+    rootDelete=None
+    rootValueChange=None
+    q=[]
+    q.append(root)
+    while(len(q)):
+        rootDelete=q.pop(0)
+        if rootDelete.key==element:
+            rootValueChange=rootDelete
+        if rootDelete.left:
+            q.append(rootDelete.left)
+        if rootDelete.right:
+            q.append(rootDelete.right)
+    if rootValueChange:
+        x=rootDelete.key
+        deleteDeepest(root,rootDelete)
+        rootValueChange.key=x
+    return root
+
+if __name__=="__main__":
+    root=Node(25)
+    insertElementInBinaryTree(root,10)
+    insertElementInBinaryTree(root,30)
+    insertElementInBinaryTree(root,45)
+    insertElementInBinaryTree(root,5)
+    insertElementInBinaryTree(root,50)
+    root=deleteANodeInBinaryTree(root,25)
+    root=deleteANodeInBinaryTree(root,10)
+    inOrder(root)

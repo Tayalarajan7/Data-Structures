@@ -1,0 +1,32 @@
+Types of Binary Tree:
+* Full/Proper/Strict Binary Tree
+	Each node must have two childrens except the leaf node.
+	Each node can have 0 or 2 childrens.
+
+Properties of Full Binary Tree:
+* The number of leaf nodes is equal to the number of internal nodes plus 1.
+* The maximum number of node is equal to 2pow(h+1)-1.
+* The minimum number of nodes in the full binary tree is 2*h-1
+
+* Complete Binary Tree
+The complete binary tree is a tree in which all the nodes are completely filled 
+except the last level. In the last level, all the nodes must be as left as 
+possible. In a complete binary tree, the nodes should be added from the left.
+
+Properties of Complete Binary Tree:
+* The maximum number of nodes in complete binary tree is 2pow(h+1)-1.
+* The minimum number of nodes in complete binary tree is 2h.
+
+* Perfect Binary Tree
+	A tree is a perfect binary tree if all the internal nodes have 2 
+children, and all the leaf nodes are at the same level.
+
+* Degenerate Binary Tree
+	The degenerate binary tree is a tree in which all the internal nodes 
+have only one children.
+
+* Balanced Binary Tree
+	The balanced binary tree is a tree in which both the left and right 
+trees differ by atmost 1.
+
+For example, AVL and Red-Black trees are balanced binary tree.

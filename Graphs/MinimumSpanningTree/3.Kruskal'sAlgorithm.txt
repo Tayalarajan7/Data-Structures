@@ -1,0 +1,9 @@
+Kruskal's Algorithm:
+	Kruskal's algorithm is an algorithm to construct a "minimum spanning
+tree" of a "weighted undirected graph".
+
+Algorithm:
+* Ascending sort all edges by their weight
+* Add eges in that order into the minimum spanning tree. Skip the edges that
+would produce cycle in minimum spanning tree.
+* Reapeat step 2 until N-1 edges are added.

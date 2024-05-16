@@ -1,0 +1,11 @@
+DFS:
+* Backtracking
+* Stack
+* LIFO
+* Space required is very less when compared to BFS 
+
+BFS
+* No Backtracking
+* Queue
+* FIFO
+* Space required is more when compared to DFS

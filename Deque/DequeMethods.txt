@@ -1,0 +1,23 @@
+Deque Methods:
+append() - insert the value in the right end.
+appendleft() - insert the value in the left end.
+
+pop() - deletes the value from right end.
+popleft() - delete the value from left end.
+
+index(ele,beg,end) - This function returns the first index of the value mentioned
+in the argument starting search from beginning and end.
+insert(i,a) - inserts the value at specified index.
+
+remove() - This function removes the first occurrence of value mentioned in 
+arguments.
+
+count() - counts the number of occurences.
+
+extend() - add multiple values at right end.
+extendleft() - add multiple values at left end.
+
+reverse() - reverse the order.
+
+rotate() - rotates the deque. If number specified is negative rotation
+occurs to the left. Else rotation occurs right.

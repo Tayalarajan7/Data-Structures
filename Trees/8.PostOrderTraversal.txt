@@ -1,0 +1,15 @@
+PostOrder Traversal:
+	In this method the root node is visited last, hence the name. First we
+traverse the left subtree, then the right subtree and finally the root node.
+
+Algorithm:
+Step 1 - Recursively traverse left subtree.
+Step 2 - Recursively traverse right subtree.
+Step 3 - Visit root node.
+
+Code:
+def postOrder(root):
+    if root:
+        postOrder(root.left)
+        postOrder(root.right)
+        print(root.key, end = " ")

@@ -1,0 +1,63 @@
+AVL Tree:
+	AVL Tree can be defined as height balanced binary search tree in which 
+each node is associated with a balance factor which is calculated by subtracting
+the height of its right sub-tree from that of its left subtree.
+
+	Tree is said to be balanced if balance factor of each node is in between
+-1 to 1 otherwise, the tree will be unbalanced and need to be balanced. 
+
+Balance Factor (k) = height(left(k)) - height(right(k))
+
+If balance factor of any node is 1, it means that the left sub-tree is one
+level higher than the right sub-tree.
+
+Complexity:
+Algorithm	Average case	Worst case
+Space		O(n)		O(n)
+Search		O(log n)	O(log n)
+Insert		O(log n)	O(log n)
+Delete		O(log n)	O(log n)
+
+Insertion:
+	Insertion in AVL tree is performed in the same way as it is performed
+in a binary search tree. However, it may lead to violation in the AVL tree
+property and therefore the tree may need balancing. The tree can be balanced
+by applying rotations.
+
+Deletion:
+	Deletion can also be performed in the same way as it is performed
+in a binary search tree. Deletion may also disturb the balance of the tree 
+therefore, various types of rotations are used to rebalance the tree.
+
+Why AVL Tree?
+	AVL tree controls the height of the binary search tree by not letting
+it to be skewed. The time taken for all operations in a binary search tree
+of height h is o(h). However, it can be extended to o(n) if the BST becomes
+skewed (i.e worst case). By limiting this height to log n, AVL tree imposes
+an upper bound on each operation to be o(log n) where n is the number of nodes.
+
+AVL Rotations:
+	We perform rotation in AVL tree only in case if Balance Factor is other
+than -1,0, and 1.
+These are basically four types of rotations which are as follows:
+1.) L L Rotation(Single Rotation):
+	Inserted node is in the left subtree of left subtree of A.
+2.) R R Rotation(Single Rotation):
+	Inserted node is in the right subtree of right subtree of A.
+3.) L R Rotation(Double Rotation):
+	Inserted node is in the right subtree of left subtree of A.
+4.) R L Rotation(Double Rotation):
+	Inserted node is in the left subtree of right subtree of A.
+
+Note: For a tree to be unbalanced minimum height should be atleast 2.
+
+
+
+
+
+
+
+
+
+
+

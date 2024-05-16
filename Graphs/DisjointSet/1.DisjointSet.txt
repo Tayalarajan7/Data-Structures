@@ -1,0 +1,30 @@
+Disjoint set:
+	Given vertices and edges between them, how could we quickly check whether
+two vertices are connected?
+	We Can do so by using the "disjoint set" or "union-find" data structure 
+or algorithm.
+
+The primary use of disjoint sets is to address the connectivity between the
+components of a network.
+
+For instance, we can use a disjoint set to determine if two people 
+share a common ancestor.
+
+Terminologies:
+Parent node: the direct parent node of a vertex.
+Root node: a node without a parent node; it can be viwed as a parent node of
+itself.
+
+Two important function of a disjoint set.
+* The find function finds the root node of a given vertex.
+* The union function unions two vertex and makes their root nodes the same.
+
+Two ways to implement a disjoint set.
+* Implementation with Quick Find:
+	Complexity of the find function will be O(1). However the union
+function will take more time with the time cmplexity of O(N).
+
+* Implementation with quick union:
+	Compared with the quick find implementation, the time complexity of
+union function is better meanwhile, the find function will take more time
+in this case.

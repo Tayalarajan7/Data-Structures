@@ -1,0 +1,10 @@
+Cut Property:
+	Cut is a partition of vertices in a "graph" into two disjoint subsets.
+
+Crossing Edge:
+	Crossing edge is an edge that connects a vertex in one set with a vertex
+in the other set.	
+
+For any cut C of the graph, if the weight of an edge E in the cut-set of C is 
+strictly smaller than the weights of all other edges of the cut-set of C, then 
+this edge belongs to all MSTs of the graph.

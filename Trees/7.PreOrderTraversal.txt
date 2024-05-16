@@ -1,0 +1,16 @@
+PreOrder Traversal:
+	In this traversal method, the root node is visited first, then the left
+subtree and finally the right subtree.
+
+Algorithm:
+Step1 - Visit root node.
+Step2 - Recursively traverse left subtree
+Step3 - Recursively traverse right subtree
+
+Code:
+def preOrder(root):
+    if root:
+        print(root.key, end = " ")
+        preOrder(root.left)
+        preOrder(root.right)
+

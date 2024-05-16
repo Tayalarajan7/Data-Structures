@@ -1,0 +1,6 @@
+Union By Rank:
+	Rank refers to height of each vertex. We will merge the shorter tree
+under the taller tree and assign the root node of the taller tree as the root
+node for both vertices. In this way, we effectively avoid the possibility
+of connecting all vertices into a straight line. This optimization is called
+the "disjoint set" with union by rank. 

@@ -1,0 +1,17 @@
+Binary Tree Representation:
+	A binary tree data structure is represented using two methods.
+* Arrays Representation
+* Linked List Representation
+
+1. Arrays Representation
+ In array representation we use one-dimentional array (1-D Array) to represent
+a binary tree. To represent a binary tree 'n', we need one dimensional array 
+with a maximum size of 2n+1.
+
+2. Linked List Representation
+ We use a doubly linked list to represent a binary tree. In doubly linked ,
+every node consists of three fields. First field for storing left child address,
+second for storing actual data and third for storing right child address.
+
+
+

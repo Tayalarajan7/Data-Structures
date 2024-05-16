@@ -1,0 +1,73 @@
+Tree Terminology:
+1.Root
+	The node at the top of the tree is called root node. 
+
+	Every tree must have a root node.
+
+	There is only one root per tree and one path from the root node to any 
+node.
+
+2.Parent
+	The node which is predecessor of any node is called as Parent Node.
+
+	The node which has child/children.
+
+3.Child
+	The node which is descendant of any node is called as Child Node.
+
+	In a tree, any parent node can have any number of child nodes.
+
+	In a tree, all nodes except root are child nodes. 
+
+4.Siblings
+	Nodes which belongs to same parent are called as Siblings.
+Example:
+If A is the parent of element B and C. Then B and C are siblings.
+
+5.Leaf
+	The node which does not have any child node is called the leaf node.
+
+	Leaf nodes are also called as External or Terminal nodes.
+
+6.Degree 
+	The total number of children of a node is called as Degree of that node.
+
+Example:
+If element A has two child nodes then its degree is 2.
+
+7.Level
+	Level of a node represents the generation of a node. If the root node is
+at level 0, then its next child node is at level 1, its grandchild is at level 2,
+and so on. 
+
+8.Height
+	The total number of edges from leaf node to a particular node in the
+longest path is called as Height of that Node.	
+
+9.Depth
+	The total number of edges from root node to a particular node is called
+as Depth of the node.
+
+* Depth of a tree-
+	The total number of edges from root node to a leaf node in the longest
+path is said to be Depth of the tree.
+
+Depth of root node is zero.
+
+10.Path
+	The sequence of Nodes and Edges from one node to another node is called
+as path between that two nodes.
+
+11.Subtree
+	Each child from a node forms a subtree recursively. Every child node
+will form a subtree on its parent tree.
+
+12.Visiting
+	Visiting refers to checking the value of a node when control is on the
+node.
+
+
+
+
+
+	 

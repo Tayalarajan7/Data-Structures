@@ -1,0 +1,28 @@
+Tree:
+	A tree is a nonlinear data structure with hierarchical relationships
+between its elements without having any cycle. It is basically reversed from
+a real tree.
+
+Tree properties:
+- Represents hierarchical data
+- Each node has two components : data and a link to its sub node
+- Base category and sub categories under it
+
+Why Tree?
+Unlike Array and Linked List, which are linear data structures, tree is 
+hierarchical (or non-linear) data structure.
+
+* To store information that naturally forms a hierarchy. 
+Example: File system on a computer.
+
+* If we organize element in form of a tree (with some ordering e.g., Binary search
+tree), we can search for a given element in moderate time (quicker than linked
+List and slower than arrays). Self balancing search trees like AVL and Red-Black
+trees guarantee an upper bound of O(log n) for search.
+
+* We can insert/delete keys in moderate time(quicker than Arrays and slower than
+Unordered Linked Lists). Self balancing trees like AVL and Red-Black trees
+guarantee an upper bound of O(log n) for insertion/deletion.
+  
+
+	

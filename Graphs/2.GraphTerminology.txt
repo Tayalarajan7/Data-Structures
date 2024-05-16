@@ -1,0 +1,14 @@
+Graph Terminology:
+1.) Vertex
+	Each node of a graph is represented as vertex.
+
+2.) Edge
+	Edge represents a path between two vertices or a line between two 
+vertices.
+
+3.) Adjacency
+	Two node or vetices are adjacent if they are connected to each other
+through an edge.
+
+4.) Path
+	Path represents a sequence of edges between two vertices.

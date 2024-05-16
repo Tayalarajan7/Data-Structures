@@ -1,0 +1,24 @@
+DFS:
+* Backtracking
+* Stack
+* LIFO
+* Space required is very less when compared to BFS 
+* Not efficient for finding shortest path in an unweighted graph
+* DFS is more suitable when there are solutions away from a given node.
+* Suitable in decision making trees which is used in puzzles or games.
+Example: Sudoko, Chess
+* Time Complexity:
+O(V+E)
+
+BFS
+* No Backtracking
+* Queue
+* FIFO
+* Space required is more when compared to DFS
+* Efficient for finding shortest path in an unweighted graph
+* BFS is more suitable when you are searching for a solution more closer
+to a given node.
+* Not suitable in decision making trees which is used in puzzles or games.
+Example: Chess Game
+* Time Complexity:
+O(V+E)

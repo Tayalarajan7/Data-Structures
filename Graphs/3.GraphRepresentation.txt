@@ -1,0 +1,4 @@
+Graph Representation:
+1.) Adjacency Matrix
+2.) Incidence Matrix
+3.) Adjacency List

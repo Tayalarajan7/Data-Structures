@@ -1,0 +1,4 @@
+“Kruskal’s algorithm” expands the “minimum spanning tree” by adding edges. 
+Whereas “Prim’s algorithm” expands the “minimum spanning tree” by adding 
+vertices.
+

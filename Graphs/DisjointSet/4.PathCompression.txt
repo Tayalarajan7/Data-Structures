@@ -1,0 +1,10 @@
+Path compression optimization - Disjoint sets:
+	In the previous implementation of the "disjoint set", notice that to
+find the root node, we need to traverse the parent node sequentially untill
+we reach the root node. If we search the root node of the same element
+again, we repeat the same operations. Is there way to optimize this process?
+
+	The answer is yes! After finding root node we can update the parent
+node of all traversed elements to their root node. When we search for the
+root node of the same element again, we only need two elements to find its'
+root node, which is highly effcient. To achieve this we use recursion.
